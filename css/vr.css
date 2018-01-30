@@ -7,11 +7,6 @@ body {
   height: 100%;
 }
 
-body > canvas {
-  position: absolute;
-  top: 0;
-}
-
 .webvr-polyfill-fullscreen-wrapper > canvas {
   padding: 0 !important;
 }
