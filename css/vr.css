@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .control-button {
   background-color: #32383f;
   font-size: 0.75rem;
