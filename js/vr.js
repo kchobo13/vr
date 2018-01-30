@@ -10,12 +10,6 @@ if (window.opener) {
 console.log(navigator.userAgent);
 console.log("window.innerWidth is " + window.innerWidth);
 console.log("window.innerHeight is " + window.innerHeight);
-
-window.onorientationchange = function () {
-  console.log("orientation change");
-  console.log("window.innerWidth is " + window.innerWidth);
-  console.log("window.innerHeight is " + window.innerHeight);
-}
 var sceneJSONString;
 
 if (window.AppInventor) {
@@ -628,9 +622,6 @@ function initVR() {
   }
 
   function onWindowResize() {
-    console.log("resize change");
-    console.log("window.innerWidth is " + window.innerWidth);
-    console.log("window.innerHeight is " + window.innerHeight);
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
