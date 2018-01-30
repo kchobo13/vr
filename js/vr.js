@@ -10,6 +10,12 @@ if (window.opener) {
 console.log(navigator.userAgent);
 console.log("window.innerWidth is " + window.innerWidth);
 console.log("window.innerHeight is " + window.innerHeight);
+
+window.onorientationchange = function () {
+  console.log("orientation change");
+  console.log("window.innerWidth is " + window.innerWidth);
+  console.log("window.innerHeight is " + window.innerHeight);
+}
 var sceneJSONString;
 
 if (window.AppInventor) {
