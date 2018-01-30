@@ -1,16 +1,3 @@
-html {
-  height: 100%;
-}
-
-body {
-  background-color: #32383f;
-  height: 100%;
-}
-
-.webvr-polyfill-fullscreen-wrapper > canvas {
-  padding: 0 !important;
-}
-
 .control-button {
   background-color: #32383f;
   font-size: 0.75rem;
