@@ -65,7 +65,7 @@ function switchScreen(screen) {
   }
 }
 
-function swithcScreenWithValue(screen, value) {
+function switchScreenWithValue(screen, value) {
   if (window.AppInventor) {
     window.AppInventor.switchScreenWithValue(screen, value);
   }
