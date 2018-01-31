@@ -59,6 +59,12 @@ function return4(b) {
   return b;
 }
 
+function switchScreen(screen) {
+  if (window.AppInventor) {
+    window.AppInventor.switchScreen(screen);
+  }
+}
+
 function initVR() {
   var polyfill = new WebVRPolyfill();
   var fullscreenButton = document.getElementById("vr-fullscreen");
