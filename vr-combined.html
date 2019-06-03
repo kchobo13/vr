@@ -3113,7 +3113,7 @@ function initVR() {
             targetx = intersects[0].point.x;
             targety = intersects[0].point.y;
             targetz = intersects[0].point.z;
-            object = intersects[0].object.userData.id;
+            object = idToObject[intersects[0].object.userData.id];
           }
           console.log("this is the on touch start");
           console.log(intersects);
