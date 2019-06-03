@@ -3115,6 +3115,9 @@ function initVR() {
             targetz = intersects[0].point.z;
             object = intersects[0].object.userData.id;
           }
+          console.log("this is the on touch start");
+          console.log(intersects);
+          console.log(object);
           var touch = (new THREE.Vector3()).set(mouse.x, mouse.y, 0.5).unproject(camera);
           procedures.ontouchstart(touches[i].clientX, touches[i].clientY, touch, targetx, targety, targetz, object, touches[i].identifier);
         }
@@ -3826,6 +3829,8 @@ function initVR() {
     } else {
       return properties[property];
     }
+    console.log("this is getting object property");
+    console.log(object);
     switch (property) {
       case "positionx":
         return object.position.x;
@@ -4001,6 +4006,11 @@ function initVR() {
   }
 
   getObjectsByName = function getObjectsByName(name) {
+    console.log("getting object");
+    console.log(Object.keys(idToObject).map(Number));
+    console.log(idToObject);
+    console.log(Object.keys(idToObject).map(Number).filter(id => idToObject[id].name === name));
+
     return Object.keys(idToObject).map(Number).filter(id => idToObject[id].name === name);
   }
 
